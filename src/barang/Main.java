@@ -39,7 +39,7 @@ public class Main {
                     roti1.Diskon();
                     System.out.println("");
                 } else if  (pilihanRoti == 4){
-                    roti1.Expired();
+                    roti1.Expired(12);
                     System.out.println("");
                 } else {
                     System.out.println("Maaf pilihan tidak tersedia");
@@ -98,6 +98,7 @@ public class Main {
                 System.out.println("2. Tampilkan nama");
                 System.out.println("3. Harga yang harus dibayar");
                 System.out.println("4. Tanggal Expired");
+                System.out.println("5. Tunjukan pilihan awal");
                 System.out.print("Menu yang dipilih: ");
                 int pilihanSabun = scanner.nextInt();
                 if (pilihanSabun == 1) {

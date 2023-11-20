@@ -1,8 +1,13 @@
 package barang;
 
 public class Sabun extends Barang{
+    String type = "Sabun";
     public Sabun(String nama, int harga, int jumlah) {
         super(nama, harga, jumlah);
+    }
+
+    public void jenis(){
+        System.out.println(nama +" ini adalah " + type);
     }
 
     public void Diskon(){

@@ -5,8 +5,18 @@ public class Roti extends Barang{
         super(nama, harga, jumlah);
     }
 
+    @Override
+    public void Displaynama() {
+        super.Displaynama();
+        System.out.println("Nama roti yang kamu pilih adalah: " + nama);
+    }
+
     public void Expired(){
         System.out.println("Masa Expired untuk roti " + nama + " adalah satu minggu");
+    }
+
+    public void Expired(int tanggal){
+        System.out.println("Roti: " + nama + " akan expired pada tanggal " + tanggal);
     }
     
     public void Diskon(){
